@@ -1,0 +1,77 @@
+body {
+    font-family: "Sedan", serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+
+header {
+    background: #000000;
+    height: 290px;
+}
+
+.nav {
+    background: #000000;
+    height: 290px;
+}
+
+.nav h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+
+.nav a {
+    color: yellow;
+}
+
+.footer {
+    background: #000000;
+    height: 400px;
+}
+
+.main {
+    background: #000000;
+    height: 860px;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center
+}
+
+.aside1 {
+    background: #ec8cac;
+}
+
+
+/*Tampilan Responsive */
+@media all and (min-width: 800px) {
+    .main {
+        flex: 2;
+    }
+    .aside1 {
+        order: 2;
+    }
+    .main {
+        order: 1;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+
+@media all and (min-width: 600px) {
+    .aside1 {
+        flex: 1;
+    }
+    
+}
